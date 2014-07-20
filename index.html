@@ -1,71 +1,307 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>4min 2 by martinpolley</title>
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>4min 2</h1>
-        <p></p>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Foundation 4</title>
 
-        <p class="view"><a href="https://github.com/martinpolley/4min_2">View the Project on GitHub <small>martinpolley/4min_2</small></a></p>
+  
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/4min.css">
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+	<div id="topnav">
+		<div class="row">
+		    <div class="large-7 columns">
+				<a href="#">Home</a>
+		        <a href="#">Today's Five</a>
+		        <a href="#">Categories</a>
+		        <a href="#">Newsletter</a>
+			</div>
+		    <div class="large-5 columns hide-for-small">
+				<span class="right">
+			        <a href="#">Facebook</a>
+			        <a href="#">Twitter</a>
+			        <a href="#">RSS Feed</a>
+				</span>
+		    </div>
+		</div>
+	</div>
+	
+  <div id="header">
+  	<div class="row">
+  		<div class="large-12 columns">
+  			<h2>Five A Day</h2>
+  			<h1>WEB DESIGN &amp; DEVELOPMENT</h1>
+  			<h3>News, articles &amp; tutorials&mdash;all in one place</h3>
+  		</div>
+  	</div>
+  </div>
+	
+  <div class="row">
+	<div class="large-8 columns" id="main_content">
+	  <h2>Today's Five</h2>
+	  <ul class="large-block-grid-2">
+	    <li>
+	      <h5>Coding a Dynamic IMDb Webapp using My Movie API</h5>
+	      <p>The online IMDb website is a crucial resource for any type of digital video media. Online web series, TV shows, and movies are all cataloged with credits to the cast and studio help. IMDb is probably the oldest resource for learning about your favorite shows or movies. In the spirit of building on top of […]</p>
+	      <a href="#" class="button radius">READ MORE</a>
+	    </li>
+	    <li>
+	      <h5>Cartoon Fundamentals: How to Draw a Cartoon Face Correctly</h5>
+	      <p>Children are the main audience when referring to the cartoons. A good cartoonist is one who can extract the main details of an object or a human being and simplify in shapes so that a child can recognize and be attracted to what they’re looking at. Was studying infant perception that masters like Walt Disney, […]</p>
+	      <a href="#" class="button radius">READ MORE</a>
+	    </li>
+	    <li>
+	      <h5>Review of Modulus for Node.js Hosting</h5>
+	      <p>Review of Modulus for Node.js Hosting I’m assuming (hoping at least), that most folks who read my blog entries here have also followed my recent articles on Nettuts+. A few weeks back I wrote about my experience of moving a Node.js site into production (“Going Live with Node”). In that article I spend most of […]</p>
+	      <a href="#" class="button radius">READ MORE</a>
+	    </li>
+	    <li>
+	      <h5>Kim Goodwin on Designing Culture</h5>
+	      <p>This article first appeared in issue 242 of .net magazine – the world’s best-selling magazine for web designers and developers. One company is known for its fabulous design. The other is known for its frustrating products. Both have terrific design teams, so how can this be? The answer pretty much always comes down to culture. […]</p>
+	      <a href="#" class="button radius">READ MORE</a>
+	    </li>
+	    <li>
+	      <h5>How to add iPhone links to WordPress (all smart phones)</h5>
+	      <p>OMG. The White iPhone! This will show you how to add iPhone links to WordPress so that clicking the link will call the number you decide. The method will also work for most modern smartphones including Android, Blackberry and even Skype if it’s installed. NOTE: Most smart phones automatically detect phone numbers on web pages […]</p>
+	      <a href="#" class="button radius">READ MORE</a>
+	    </li>
+	  </ul>
+	</div>
+    <div class="large-3 columns right" id="ad_sidebar">
+		<div class="row">
+			<div class="large-12 columns">
+				<p id="contact_intro">OMG, I love what you guys are doing, and I want to work with you. Please get in touch with me ASAP!</p>
+				<form class="custom">
+					<select id="contact_select">
+						<option value="select" class="selectlabel">Contact me via&hellip;</option>
+						<option value="email">Email</option>
+						<option value="phone">Phone</option>
+						<option value="sms">SMS</option>
+					</select>
+				</form>
+				
+				<form class="hbd" id="email_opts">
+					<label>Email address</label>
+					<input type="email"/>
+					<label>Retype email address</label>
+					<input type="email"/>
+					<input type="submit" value="Submit" class="large-7 columns button small"/>
+					<input type="button" value="Cancel" class="large-4 columns right button small secondary"/>
+				</form>
+
+				<form class="hbd custom" id="phone_opts">
+					<label>Primary phone</label>
+					<select>
+						<option value="select" class="selectlabel">Select</option>
+						<option value="home">Home</option>
+						<option value="work">Work</option>
+						<option value="mobile">Mobile</option>
+					</select>
+					<label>Phone number</label>
+					<input type="tel"/>
+					<input type="submit" value="Submit" class="large-7 columns button small"/>
+					<input type="button" value="Cancel" class="large-4 columns right button small secondary"/>
+				</form>
+  
+				<form class="hbd custom" id="sms_opts">
+					<label>Mobile provider</label>
+					<select>
+						<option value="select" class="selectlabel">Select</option>
+						<option value="cellcom">Cellcom</option>
+						<option value="orange">Orange</option>
+						<option value="pelephone">Pelephone</option>
+					</select>
+					<label>Mobile number</label>
+					<input type="tel"/>
+					<input type="submit" value="Submit" class="large-7 columns button small"/>
+					<input type="button" value="Cancel" class="large-4 columns right button small secondary"/>
+				</form>
+
+				
+				<hr/>
+			</div>
+		</div>
+    	<div class="row hide-for-small">
+    		<div class="large-12 columns">
+				<div class="ad_container">
+					<h5>An ad</h5>
+					<img src="http://placehold.it/220x150"/>
+					<p>Blah, blah, yadda, yadda.</p>
+				</div>
+				<div class="ad_container">
+					<h5>An ad</h5>
+					<img src="http://placehold.it/220x150"/>
+					<p>Blah, blah, yadda, yadda.</p>
+				</div>
+				<div class="ad_container">
+					<h5>An ad</h5>
+					<img src="http://placehold.it/220x150"/>
+					<p>Blah, blah, yadda, yadda.</p>
+				</div>
+				<div class="ad_container">
+					<h5>An ad</h5>
+					<img src="http://placehold.it/220x150"/>
+					<p>Blah, blah, yadda, yadda.</p>
+				</div>
+				<div class="ad_container">
+					<h5>An ad</h5>
+					<img src="http://placehold.it/220x150"/>
+					<p>Blah, blah, yadda, yadda.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  
+	<div id="footer">
+	<div class="row">
+		<div class="large-2 column">
+			<h4>Categories</h4>
+		</div>
+		<div class="large-3 columns">
+			<input type="search"/>
+		</div>
+		<div class="large-7 columns">
+			<a href="#" class="button small radius">Search</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-3 columns">
+			<ul>
+	  			<li><a href="#">Accessibility</a></li>
+	  			<li><a href="#">AJAX</a></li>
+	  			<li><a href="#">Android</a></li>
+	  			<li><a href="#">Animation</a></li>
+	  			<li><a href="#">Bootstrap</a></li>
+	  			<li><a href="#">Browsers</a></li>
+	  			<li><a href="#">Business</a></li>
+	  			<li><a href="#">Code</a></li>
+	  			<li><a href="#">Code Editor</a></li>
+	  			<li><a href="#">Concrete5</a></li>
+	  			<li><a href="#">Conferences</a></li>
+	  			<li><a href="#">CSS</a></li>
+	  		</ul>
+		</div>
+		<div class="large-3 columns">
+			<ul>
+	  			<li><a href="#">Design</a></li>
+	  			<li><a href="#">Drupal</a></li>
+	  			<li><a href="#">eCommerce</a></li>
+	  			<li><a href="#">Email</a></li>
+	  			<li><a href="#">Expression Engine</a></li>
+	  			<li><a href="#">Frameworks</a></li>
+	  			<li><a href="#">Hardware</a></li>
+	  			<li><a href="#">Hosting</a></li>
+	  			<li><a href="#">HTML</a></li>
+	  			<li><a href="#">Illustration</a></li>
+	  			<li><a href="#">iOS</a></li>
+	  			<li><a href="#">Javascript</a></li>
+	  		</ul>
+		</div>
+		<div class="large-3 columns">
+			<ul>
+	  			<li><a href="#">Joomla</a></li>
+	  			<li><a href="#">LESS/SASS</a></li>
+	  			<li><a href="#">Magento</a></li>
+	  			<li><a href="#">Marketing</a></li>
+	  			<li><a href="#">Mobile</a></li>
+	  			<li><a href="#">MODx</a></li>
+	  			<li><a href="#">News</a></li>
+	  			<li><a href="#">Parallax</a></li>
+	  			<li><a href="#">Perch</a></li>
+	  			<li><a href="#">PHP</a></li>
+	  			<li><a href="#">Responsive Design</a></li>
+	  			<li><a href="#">Retina</a></li>
+	  		</ul>
+		</div>
+		<div class="large-3 columns">
+			<ul>
+	  			<li><a href="#">SEO</a></li>
+	  			<li><a href="#">Social Networking</a></li>
+	  			<li><a href="#">Software</a></li>
+	  			<li><a href="#">Tumblr</a></li>
+	  			<li><a href="#">Typography</a></li>
+	  			<li><a href="#">UI</a></li>
+	  			<li><a href="#">Video</a></li>
+	  			<li><a href="#">Wireframing</a></li>
+	  			<li><a href="#">Wordpress</a></li>
+	  		</ul>
+		</div>
+	</div>
+	<div class="row">
+		<hr/>
+		<div class="large-3 columns">
+			<span>&copy; 2013 | <a href="#">Contact</a></span>
+		</div>
+		<div class="large-3 columns large-offset-6">
+			<span class="right">
+	  			<img src="http://placehold.it/30x30&text=twitter">
+	  			<img src="http://placehold.it/30x30&text=facebook">
+	  			<img src="http://placehold.it/30x30&text=rss">
+	  		</span>
+		</div>
+	</div>
+	</div>
 
 
-        <ul>
-          <li><a href="https://github.com/martinpolley/4min_2/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/martinpolley/4min_2/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/martinpolley/4min_2">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <script src="js/4min.js"></script>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/martinpolley">martinpolley</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
 </html>
